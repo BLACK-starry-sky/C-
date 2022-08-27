@@ -89,6 +89,7 @@
 //	printf("%d\n", m);
 //	return 0;
 //}
+//交换变量
 #include <stdio.h>
 void swap(int *px,int *py)
 {
@@ -103,7 +104,8 @@ int main()
 	int a = 0, b = 0;
 	scanf("%d%d", & a, & b);
 	printf("交换前%d %d\n", a, b);
-	swap(&a, &b);
+	swap(&a, &b);  //传址调用
+	//swap(x, b);  传值调用
 	printf("交换后%d %d\n", a, b);
 	return 0;
 }
